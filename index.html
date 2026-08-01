@@ -493,7 +493,8 @@
                     } else if (poseHoldStartTime !== null) {
                         if (isReadyToRelease) {
                             score++; document.getElementById('val-score').innerText = score;
-                            sEl.innerText = "いいよ！"; sEl.style.color = "#ffff00"; playSound(1200, 0.3);
+                            //sEl.innerText = "いいよ！"; sEl.style.color = "#ffff00"; playSound(1200, 0.3);
+                            sEl.innerText = "いいよ！"; sEl.style.color = "#ffff00"; speak("いいよ");
                         } else {
                             sEl.innerText = "ざんねん"; sEl.style.color = "#ff3366"; speak("ざんねん");
                         }
